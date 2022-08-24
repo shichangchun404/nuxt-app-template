@@ -1,4 +1,6 @@
-export default {
+const { resolve } = require("path");
+
+module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-app-template',
@@ -37,6 +39,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      "@nuxtjs/router",
+      {
+        path: resolve(__dirname, "./src/router/"),
+        fileName: "index.js"
+      }
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
