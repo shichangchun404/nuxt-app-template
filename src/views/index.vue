@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1> hi home view </h1>
-    <el-button v-for="(item,index) in list" :key="index">{{item}}</el-button>
-    <el-button v-for="(item) in list2" :key="item">{{item}}</el-button>
+    <el-button v-for="(item,index) in list" :key="index" @click="call(item)">{{item}}</el-button>
+    <el-button v-for="(item) in list2" :key="item" @click="call(item)">{{item}}</el-button>
   </div>
 </template>
 
@@ -22,6 +22,11 @@ export default Vue.extend({
   data(){
     return {
       list2: ['苹果', '香蕉', '芒果']
+    }
+  },
+  methods: {
+    call(value: string){
+      this.$message.success(value)
     }
   }
 })
