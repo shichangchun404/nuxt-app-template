@@ -1,3 +1,3 @@
 module.exports = {
-  portalApi: 'http://shicc.vip',
+  api: 'http://xxx-api.com',
 }

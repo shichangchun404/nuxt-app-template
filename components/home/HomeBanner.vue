@@ -21,7 +21,8 @@ export default {
     })
   },
   mounted(){
-    // console.log('HomeList list', this.bannerList.toString())
+    // @ts-ignore
+    console.log('HomeList bannerList', this.bannerList)
   },
   methods: {
     call(value: string){

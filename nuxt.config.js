@@ -4,6 +4,7 @@ console.table(config);
 
 module.exports = {
   plugins: [
+    '@/plugins/axios',
     '@/plugins/inject-vue'
   ],
 
@@ -11,8 +12,7 @@ module.exports = {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
+  buildModules: [  // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
   ],
 
@@ -27,7 +27,16 @@ module.exports = {
     ],
     "@nuxtjs/axios",
   ],
-  build: {
-    transpile: [],
-  }
+  axios: {
+    proxy: true,
+  },
+  proxy: {
+    "/api": {
+      target: config.api, // 代理地址
+      changeOrigin: true,
+      pathRewrite: {
+        "^/api": "/api"
+      }
+    },
+  },
 }

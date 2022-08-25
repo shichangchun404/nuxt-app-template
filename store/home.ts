@@ -1,6 +1,6 @@
 import {
   getBannerlist,
-} from "@/src/api/home";
+} from "@/src/api/home.js";
 
 export const state = () => ({
   bannerList: [],
