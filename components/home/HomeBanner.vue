@@ -15,13 +15,13 @@ export default {
   name: 'HomeBanner',
   computed: {
     ...mapState({
-      bannerList: (state: any) => {
+      bannerList: (state: any): Array<any> => {
         return state.home.bannerList
       }
     })
   },
   mounted(){
-    console.log('HomeList list', this.bannerList)
+    // console.log('HomeList list', this.bannerList.toString())
   },
   methods: {
     call(value: string){

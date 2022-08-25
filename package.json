@@ -9,11 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/router": "^1.7.0",
     "core-js": "^3.19.3",
-    "element-ui": "^2.15.6",
     "express": "^4.18.1",
     "nuxt": "^2.15.8",
+    "regenerator-runtime": "^0.13.9",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",

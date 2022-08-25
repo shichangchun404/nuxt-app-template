@@ -10,13 +10,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import HomeBanner from '~/components/home/HomeBanner.vue'
+// import HomeBanner from '~/components/home/HomeBanner.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: {
-    HomeBanner
-  },
+  // components: {
+  //   HomeBanner
+  // },
   fetch({ store, app, route, redirect }){
     store.dispatch("home/FETCH_GET_BANNER", {state: 0})
   },
