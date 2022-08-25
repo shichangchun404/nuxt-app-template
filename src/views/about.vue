@@ -1,5 +1,8 @@
 <template>
-  <div>hi about view id = {{id}}</div>
+  <div>
+    <div>about view id = {{id}}</div>
+    <nuxt-link to="/">返回首页</nuxt-link>
+  </div>
 </template>
 
 <script lang="ts">
