@@ -33,10 +33,10 @@ export default Vue.extend({
         { hid: "keywords", name: "keywords", content: "keywords" }
       ],
       link: [
-        { rel: 'stylesheet', href: '/static/index.css' }
+        { rel: 'stylesheet', href: '/static/css/index.css' }
       ],
       // script: [
-      //   { type: "text/javascript", src: 'xxx.js'}
+      //   { type: "text/javascript", src: '/static/css/index.js'}
       // ]
     }
   },
